@@ -7,8 +7,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { HiBars3BottomRight, HiXMark } from "react-icons/hi2";
-import { IoIosHeartEmpty, IoIosSearch } from "react-icons/io";
-import { PiShoppingCartSimple } from "react-icons/pi";
+import Container from "../ui/Container";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="mx-20 pt-3 md:pt-5 lg:pt-[27px]">
+    <Container className="pt-3 md:pt-5 lg:pt-[27px]">
       <div className="flex items-center justify-between gap-x-6 pb-4 font-medium">
         {/* large device navbar and nav item */}
         <nav className="inline-flex items-start justify-start gap-[50px]">
@@ -82,7 +81,7 @@ const Navbar = () => {
           </span>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
