@@ -1,4 +1,4 @@
-import Information from "@/Home/information/Information";
+import Information from "@/home/Information";
 
 const Home = () => {
   return (
