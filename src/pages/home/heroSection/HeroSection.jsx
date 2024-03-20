@@ -1,6 +1,6 @@
 "use client";
 
-import { bakilda } from "@/assets/Fonts/font";
+import { abril, bakilda } from "@/assets/Fonts/font";
 import { coffeeBg, leafOne, leafTwo } from "@/assets/images";
 import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/button";
@@ -88,10 +88,12 @@ const HeroSection = () => {
                         })}
                       </div>
                       <div>
-                        <h2 className="text-[20px] font-semibold lg:text-2xl">
+                        <h2
+                          className={`${abril.className} text-xl font-semibold tracking-tight lg:text-2xl`}
+                        >
                           1200+
                         </h2>
-                        <p className="flex text-[12px] font-normal lg:text-[14px]">
+                        <p className="text-xs tracking-tight lg:text-sm">
                           Tasty Variant Coffee
                         </p>
                       </div>
