@@ -6,9 +6,9 @@ import Image from "next/image";
 
 const Information = () => {
   return (
-    <Container className="bg-orange-5 lg:h-[246px]">
-      <div className="mx-auto grid lg:grid-cols-4">
-        <div className="rounded-b-xl bg-my-secondary lg:h-[300px] lg:w-[280px] xl:h-[326px] xl:w-[319px]">
+    <Container className="lg:mb-24">
+      <div className="mx-auto grid bg-orange-5 lg:h-[246px] lg:grid-cols-4">
+        <div className="rounded-t-xl bg-my-secondary lg:h-[300px] lg:w-[280px] lg:rounded-b-xl lg:rounded-t-none xl:h-[326px] xl:w-[319px]">
           <div className="flex justify-center py-4 lg:py-6">
             <Image src={longArrowIcon} alt="arrow" />
           </div>

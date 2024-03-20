@@ -48,7 +48,7 @@ const HeroSection = () => {
   };
 
   return (
-    <Container className="overflow-hidden lg:pb-36 lg:pt-8 xl:pb-40 xl:pt-10">
+    <Container className="overflow-hidden pb-16 pt-5 md:pb-20 md:pt-7 lg:pb-36 lg:pt-8 xl:pb-40 xl:pt-10">
       <Slider {...settings}>
         {heroData?.map((hero) => {
           return (

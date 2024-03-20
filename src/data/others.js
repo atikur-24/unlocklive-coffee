@@ -18,3 +18,21 @@ export const infoData = [
     location: "+1 452-754-6579",
   },
 ];
+
+export const chooseData = [
+  {
+    id: 1,
+    title: "Years Experience",
+    year: 20,
+  },
+  {
+    id: 2,
+    title: "Master Chefs",
+    year: 100,
+  },
+  {
+    id: 3,
+    title: "Achievements",
+    year: 30,
+  },
+];
