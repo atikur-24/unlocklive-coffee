@@ -6,33 +6,36 @@ import Image from "next/image";
 
 const Information = () => {
   return (
-    <Container className="h-[246px] bg-orange-5">
-      <div className="mx-auto grid lg:grid-cols-4 lg:gap-10">
+    <Container className="bg-orange-5 lg:h-[246px]">
+      <div className="mx-auto grid lg:grid-cols-4">
         <div className="rounded-b-xl bg-my-secondary lg:h-[300px] lg:w-[280px] xl:h-[326px] xl:w-[319px]">
-          <div className="px-10 py-6">
+          <div className="flex justify-center py-4 lg:py-6">
             <Image src={longArrowIcon} alt="arrow" />
           </div>
-          <div className="mt-4 flex items-center justify-center gap-[20px]">
+          <div className="mb-6 mt-4 flex items-center justify-center gap-[20px]">
             <Image src={videoIcon} alt="video" />
             <p
-              className={`${abril.className} text-nowrap text-xl font-medium text-stone-2 lg:font-semibold xl:text-2xl`}
+              className={`${abril.className} text-nowrap text-lg font-medium text-stone-2 md:text-xl lg:font-semibold xl:text-2xl`}
             >
               Play Intro Video
             </p>
           </div>
         </div>
-        <div className="col-span-3 lg:py-[70px]">
-          <div className="grid grid-cols-1 divide-x-2 divide-my-primary divide-opacity-10 lg:grid-cols-3">
+        <div className="py-10 lg:col-span-3 lg:py-[70px]">
+          <div className="grid place-content-center divide-y-2 divide-my-primary divide-opacity-10 lg:grid-cols-3 lg:place-items-center lg:divide-x-2 lg:divide-y-0">
             {infoData?.map((data) => {
               return (
-                <div className="lg:pl-14 xl:pl-[70px]" key={data.id}>
+                <div
+                  className="py-4 md:my-6 lg:py-0 lg:pl-14 xl:pl-[70px]"
+                  key={data.id}
+                >
                   <p
-                    className={`${abril.className} text-xl font-semibold xl:text-2xl`}
+                    className={`${abril.className} text-lg font-semibold md:text-xl xl:text-2xl`}
                   >
                     {data?.title}
                   </p>
-                  <p className="mt-4 xl:mt-6">{data?.time}</p>
-                  <p className="mt-2">{data?.location}</p>
+                  <p className="mt-2 md:mt-4 xl:mt-6">{data?.time}</p>
+                  <p className="mt-1 lg:mt-2">{data?.location}</p>
                 </div>
               );
             })}

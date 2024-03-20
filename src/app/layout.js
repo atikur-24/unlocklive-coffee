@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${valueSansPro.className} text-my-primary mx-auto max-w-screen-2xl text-xs sm:text-sm lg:text-base`}
+        className={`${valueSansPro.className} mx-auto max-w-screen-2xl text-xs text-my-primary sm:text-sm lg:text-base`}
       >
         <Navbar />
         {children}
