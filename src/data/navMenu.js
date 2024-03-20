@@ -1,10 +1,12 @@
 export const navMenu = [
   {
+    id: 1,
     name: "Home",
     path: "/",
   },
 
   {
+    id: 2,
     name: "Pages",
     submenu: [
       {
@@ -26,6 +28,7 @@ export const navMenu = [
     ],
   },
   {
+    id: 3,
     name: "Menu",
     submenu: [
       {
@@ -51,6 +54,7 @@ export const navMenu = [
     ],
   },
   {
+    id: 4,
     name: "Contact Us",
     path: "/contact",
   },

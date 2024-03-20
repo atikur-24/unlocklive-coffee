@@ -1,9 +1,10 @@
 import Information from "@/home/Information";
+import HeroSection from "@/pages/home/heroSection/HeroSection";
 
 const Home = () => {
   return (
-    <main className="mx-20">
-      {/* <HeroSection /> */}
+    <main>
+      <HeroSection />
       <Information />
     </main>
   );

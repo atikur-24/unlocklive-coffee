@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Information = () => {
   return (
-    <Container className="bg-orange-5">
+    <Container className="bg-orange-500">
       <div className="flex items-center justify-between">
         <div className="">
           <div className="relative rounded-bl-xl rounded-br-xl bg-secondary xl:h-[226px] xl:w-[219px] 2xl:h-[326px] 2xl:w-[319px]">
