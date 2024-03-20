@@ -8,11 +8,11 @@ import Image from "next/image";
 
 const ChooseUs = () => {
   return (
-    <Container className="mx-auto overflow-hidden pb-[100px] pt-[100px] lg:pb-[127px] lg:pt-[165px] ">
+    <Container className="overflow-hidden py-[80px] md:py-[100px] lg:pb-[110px] lg:pt-[140px] xl:pb-[120px] xl:pt-[160px]">
       <Image
         src={flowerImg}
         alt="cup"
-        className="absolute right-[-130px] top-0 hidden rotate-12 lg:flex"
+        className="absolute top-0 hidden rotate-6 lg:right-[-130px] lg:block xl:right-[-110px]"
       />
       <div className="flex flex-col items-center justify-between gap-8 md:gap-10 lg:flex-row lg:gap-20 xl:gap-28">
         <div className="">
@@ -53,7 +53,7 @@ const ChooseUs = () => {
             Your choice to savor our coffee is an invitation to experience the
             epitome of craftsmanship, flavor, and dedication.
           </p>
-          <div className="mt-5 flex justify-center md:mt-8 lg:mt-12 lg:justify-start">
+          <div className="mt-5 flex justify-center md:mt-8 lg:mt-10 lg:justify-start">
             <Button variant="outline">Explore Our Menus</Button>
           </div>
         </div>
