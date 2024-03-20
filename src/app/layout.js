@@ -1,5 +1,5 @@
+import { valueSansPro } from "@/assets/Fonts/font";
 import Navbar from "@/components/shared/Navbar/Navbar";
-import { valueSansPro } from "./font";
 import "./globals.css";
 
 export const metadata = {

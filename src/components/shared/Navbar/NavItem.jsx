@@ -4,13 +4,13 @@ import Link from "next/link";
 const NavItem = () => {
   return (
     <>
-      {navMenu?.map((name) => {
-        return name?.submenu ? (
-          <li key={name.id}>
+      {navMenu?.map((item) => {
+        return item?.submenu ? (
+          <li key={item.id}>
             <details>
-              <summary>{name?.name}</summary>
+              <summary>{item?.name}</summary>
               <ul>
-                {name?.submenu?.map((submenuItem) => {
+                {item?.submenu?.map((submenuItem) => {
                   return (
                     <li key={submenuItem.path}>
                       <Link href={submenuItem.path} className="text-nowrap">
@@ -23,8 +23,8 @@ const NavItem = () => {
             </details>
           </li>
         ) : (
-          <li key={name.path} className="text-nowrap">
-            <Link href={name.path}>{name.name}</Link>
+          <li key={item.path} className="text-nowrap">
+            <Link href={item.path}>{item.name}</Link>
           </li>
         );
       })}
