@@ -1,3 +1,4 @@
 export * from "./hero/hero";
 export * from "./icon/icon";
-export * from "./othersImg/others";
+export * from "./menu/menu";
+export * from "./othersImg/other";

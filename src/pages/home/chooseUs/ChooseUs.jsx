@@ -15,12 +15,12 @@ const ChooseUs = () => {
         className="absolute top-0 hidden rotate-6 lg:right-[-130px] lg:block xl:right-[-110px]"
       />
       <div className="flex flex-col items-center justify-between gap-8 md:gap-10 lg:flex-row lg:gap-20 xl:gap-28">
-        <div className="">
+        <div>
           <SectionTitle
-            position="right"
-            style="left"
+            className="flex flex-col items-center lg:items-start"
             title="Choosing Unlocklive, A Taste of Perfection"
             subTitle="Why Choose Us"
+            leftStyle="hidden"
           />
           <p className="mt-3 tracking-tight opacity-60 lg:leading-7">
             Unlocklive takes pride in the art of roasting, transforming raw
@@ -57,7 +57,7 @@ const ChooseUs = () => {
             <Button variant="outline">Explore Our Menus</Button>
           </div>
         </div>
-        <div className="rounded-b-2xl rounded-t-full border-2 border-t-transparent p-4">
+        <div className="rounded-b-2xl rounded-t-full border-2 border-my-primary border-t-transparent border-opacity-10 p-4">
           <Image src={chooseImg} alt="coffee" />
         </div>
       </div>
