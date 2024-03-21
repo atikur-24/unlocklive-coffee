@@ -19,7 +19,7 @@ const CoffeeMenu = () => {
           return (
             <div
               key={menu.id}
-              className="flex items-center justify-between gap-5 rounded-md border border-my-primary border-opacity-10 p-4 md:rounded-xl md:p-4 lg:p-7"
+              className="flex cursor-pointer items-center justify-between gap-5 rounded-md border border-my-primary border-opacity-10 p-4 md:rounded-xl md:p-4 lg:p-7"
             >
               <div className="flex items-center gap-2 lg:gap-4">
                 <div className="flex items-center justify-center rounded-full border border-dashed border-my-primary p-1">
