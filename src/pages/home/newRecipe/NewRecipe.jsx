@@ -57,51 +57,50 @@ const NewRecipe = () => {
   };
 
   return (
-    <Container className="bg-orange-5">
-      <div className="mx-auto flex flex-col items-center justify-normal gap-[60px] lg:flex-row">
-        <div className="">
+    <Container className="bg-orange-5 py-10 md:py-12 lg:py-16 xl:py-20">
+      <div className="flex flex-col items-center justify-between gap-10 lg:flex-row xl:gap-20">
+        <div className="flex-auto">
           <SectionTitle
             className="flex flex-col items-center lg:items-start"
             title="Taste Our New Recipe"
             subTitle="New Recipes"
             leftStyle="hidden"
           />
-          <p className="mt-[19px] text-justify text-[16px] font-normal leading-[21px] text-[#53565C] lg:leading-[24px]">
-            Malesuada cursus a tincidunt volutpat posuere lacinia. Congue
-            malesuada lacus pharetra ut vel amet. Amet turpis suspendisse
-            porttitor scelerisque amet dolor et. Nisi ac vitae tortor
-            lacinirisus. Scelerisque nibh elit malesuada sodales eget iaculis
-            nunc erat. Donec quis fermentum mattis aliquet gravida. Adipiscing
-            eu sit ornare imperdiet viverra sit vel.
+          <p className="my-3 text-justify text-zinc-600 lg:my-5">
+            Our chefs have been hard at work crafting innovative recipes that
+            combine the finest ingredients to bring you flavors that will
+            delight and surprise you. Whether you&apos;re a fan of hearty
+            comfort food or craving something light and refreshing, we&apos;ve
+            got something for everyone.
           </p>
-          <p className="mt-[19px] text-justify text-[16px] font-normal leading-[21px] text-[#53565C] lg:leading-[24px]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias
-            minima voluptas sint porro corporis eos laboriosam odio quod.
+          <p className="text-justify text-zinc-600">
+            Come on over and taste our new recipe! We can&apos;t wait to see you
+            and hear what you think about our latest recipes.
           </p>
-          <div className="mt-[20px] flex items-center justify-center gap-[20px] lg:mt-[40px] lg:justify-normal lg:gap-[30px]">
+          <div className="mt-4 flex items-center justify-center gap-4 lg:mt-10 lg:justify-normal lg:gap-8">
             <div
-              className="flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full border border-[#270A05]"
+              className="flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full border border-primary"
               onClick={goToPrevSlide}
             >
               <TiArrowLeft className="text-2xl" />
             </div>
             <div
-              className="flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full border border-[#270A05]"
+              className="flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-full border border-primary"
               onClick={goToNextSlide}
             >
               <TiArrowRight className="text-2xl" />
             </div>
           </div>
         </div>
-        <div className="w-[340px] lg:w-[800px]">
+        <div className="w-full lg:w-[720px]">
           <Slider ref={sliderRef} {...settings}>
             {recipeData?.map((recipe) => (
               <div key={recipe.id}>
-                <div className="group relative block h-[460px] w-[340px] rounded-[28px] bg-gray-900 lg:h-[472px] lg:w-[375px]">
+                <div className="group relative block h-[460px] w-[340px] rounded-[20px] bg-gray-900 transition-all lg:h-[400px] lg:w-[300px] xl:h-[442px] xl:w-[345px]">
                   <Image
                     className="absolute inset-0 h-full 
-                                  w-full rounded-[28px] border-white object-cover group-hover:border-[9px] group-hover:opacity-50"
-                    src={recipe?.img}
+                                  w-full rounded-[20px] border-white object-cover transition-all group-hover:border-[7px] group-hover:opacity-50"
+                    src={recipe.img}
                     alt="recipe"
                   />
                   <div className="relative p-5">
@@ -114,8 +113,8 @@ const NewRecipe = () => {
                                   group-hover:opacity-100"
                       >
                         <ul className="list-disc pl-2 text-[16px] leading-[26px] text-white lg:pl-6">
-                          <li>{recipe?.title}</li>
-                          <li>{recipe?.text}</li>
+                          <li>{recipe.title}</li>
+                          <li>{recipe.text}</li>
                         </ul>
                       </div>
                     </div>
