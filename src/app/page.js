@@ -10,7 +10,7 @@ const Home = () => {
       <Information />
       <ChooseUs />
       <CoffeeMenu />
-      <div className="pt-[100px]"></div>
+      <div className=""></div>
     </main>
   );
 };

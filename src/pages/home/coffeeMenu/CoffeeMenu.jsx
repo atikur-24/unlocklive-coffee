@@ -2,61 +2,67 @@ import { abril } from "@/assets/Fonts/font";
 import { coffeeBgTransparent } from "@/assets/images";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
+import { Button } from "@/components/ui/button";
 import { coffeeMenuData } from "@/data";
 import Image from "next/image";
 
 const CoffeeMenu = () => {
   return (
-    <Container className="overflow-hidden">
+    <Container className="overflow-hidden pb-[100px]">
       <SectionTitle
         className="flex flex-col items-center"
         title="Unlocklive Coffee Menu"
         subTitle="Coffee Menu"
       />
-      <div className="mt-10 grid grid-cols-1 gap-[30px] lg:mt-[80px] lg:grid-cols-2">
+      <div className="mt-10 grid grid-cols-1 gap-4 md:gap-7 lg:mt-16 lg:grid-cols-2 xl:gap-[30px]">
         {coffeeMenuData?.map((menu) => {
           return (
             <div
               key={menu.id}
-              className="flex h-[100px] w-[340px] items-center justify-normal gap-[20px] rounded-[12px] border border-[#270a054a] p-[4px] lg:h-[144px] lg:w-[668px] lg:gap-[136px] lg:p-[30px]"
+              className="flex items-center justify-between gap-5 rounded-md border border-my-primary border-opacity-10 p-4 md:rounded-xl md:p-4 lg:p-7"
             >
-              <div className="flex items-center justify-normal gap-[8px] lg:gap-[16px]">
-                <div className="flex h-[53px] w-[75px] items-center justify-center rounded-full border border-dotted border-[#86371C] lg:h-[75px] lg:w-[78px]">
-                  <div className="h-[45px] w-[45px] rounded-full lg:h-[65px] lg:w-[63px]">
-                    <Image
-                      src={menu?.img}
-                      alt="coffee menu"
-                      className="h-full w-full rounded-full"
-                    />
+              <div className="flex items-center gap-2 lg:gap-4">
+                <div className="flex items-center justify-center rounded-full border border-dashed border-my-primary p-1">
+                  <div className="bg-slate-2 rounded-full p-1 lg:p-1.5">
+                    <div className="h-[45px] w-[45px] md:h-[55px] md:w-[55px] lg:h-[65px] lg:w-[65px]">
+                      <Image
+                        src={menu.img}
+                        alt="coffee menu"
+                        className="h-full w-full rounded-full"
+                      />
+                    </div>
                   </div>
                 </div>
-
                 <div>
                   <p
-                    className={`${abril.className} text-[17px] font-semibold lg:text-[24px]`}
+                    className={`${abril.className} text-lg font-semibold md:text-xl xl:text-xl`}
                   >
-                    {menu?.name}
+                    {menu.name}
                   </p>
-                  <p className="text-[12px] font-normal lg:text-[14px]">
+                  <p className="text-xs opacity-70 md:tracking-tight lg:text-sm">
                     {menu.desc}
                   </p>
                 </div>
               </div>
-              <div className="flex h-[36px] w-[49px] items-center justify-center rounded-full border border-dotted border-[#86371C] lg:h-[57px] lg:w-[61px]">
-                <div className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-[#86371C] lg:h-[50px] lg:w-[50px]">
-                  <p className="text-[10px] font-medium text-white lg:text-[20px]">
-                    ${menu.price}
-                  </p>
-                </div>
+              <div className="hidden text-sm tracking-wide text-neutral-300 md:block">
+                .............................
+              </div>
+              <div className="rounded-full border border-dashed border-my-primary">
+                <h1 className="bg-gray-2 flex items-center justify-center rounded-full p-1.5 text-base font-medium transition-all duration-200 hover:bg-my-secondary hover:text-white md:p-2 md:text-lg lg:p-2.5 lg:font-semibold xl:text-xl">
+                  ${menu.price}
+                </h1>
               </div>
             </div>
           );
         })}
       </div>
+      <div className="mt-10 flex flex-col items-center lg:mt-12 xl:mt-16">
+        <Button variant="outline">View All Menu</Button>
+      </div>
       <Image
         src={coffeeBgTransparent}
         alt="coffee"
-        className="absolute bottom-14 right-[-150px] hidden lg:flex"
+        className="absolute -right-8 bottom-10 hidden lg:flex"
       />
     </Container>
   );

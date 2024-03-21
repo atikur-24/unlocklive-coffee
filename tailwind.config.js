@@ -22,6 +22,8 @@ module.exports = {
         "my-secondary": "#86371C",
         "orange-5": "#FFFAF2",
         "stone-2": "#F2EFDF",
+        "slate-2": "#E1DEDD",
+        "gray-2": "#E9E7E6",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
