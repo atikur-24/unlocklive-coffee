@@ -13,7 +13,7 @@ const Home = () => {
       <ChooseUs />
       <CoffeeMenu />
       <NewRecipe />
-      <NewCreations />
+      {/* <NewCreations /> */}
     </main>
   );
 };

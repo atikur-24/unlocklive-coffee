@@ -1,5 +1,6 @@
 import { valueSansPro } from "@/assets/Fonts/font";
 import Navbar from "@/components/shared/Navbar/Navbar";
+import Footer from "@/components/shared/footer/Footer";
 import "./globals.css";
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
