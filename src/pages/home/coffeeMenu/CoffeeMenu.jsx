@@ -23,9 +23,10 @@ const CoffeeMenu = () => {
             >
               <div className="flex items-center gap-2 lg:gap-4">
                 <div className="flex items-center justify-center rounded-full border border-dashed border-my-primary p-1">
-                  <div className="bg-slate-2 rounded-full p-1 lg:p-1.5">
+                  <div className="rounded-full bg-slate-2 p-1 lg:p-1.5">
                     <div className="h-[45px] w-[45px] md:h-[55px] md:w-[55px] lg:h-[65px] lg:w-[65px]">
                       <Image
+                        placeholder="blur"
                         src={menu.img}
                         alt="coffee menu"
                         className="h-full w-full rounded-full"
@@ -48,7 +49,7 @@ const CoffeeMenu = () => {
                 .............................
               </div>
               <div className="rounded-full border border-dashed border-my-primary">
-                <h1 className="bg-gray-2 flex items-center justify-center rounded-full p-1.5 text-base font-medium transition-all duration-200 hover:bg-my-secondary hover:text-white md:p-2 md:text-lg lg:p-2.5 lg:font-semibold xl:text-xl">
+                <h1 className="flex items-center justify-center rounded-full bg-gray-2 p-1.5 text-base font-medium transition-all duration-200 hover:bg-my-secondary hover:text-white md:p-2 md:text-lg lg:p-2.5 lg:font-semibold xl:text-xl">
                   ${menu.price}
                 </h1>
               </div>

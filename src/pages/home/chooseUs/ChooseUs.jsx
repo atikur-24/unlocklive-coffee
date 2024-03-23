@@ -58,7 +58,7 @@ const ChooseUs = () => {
           </div>
         </div>
         <div className="rounded-b-2xl rounded-t-full border-2 border-my-primary border-t-transparent border-opacity-10 p-4">
-          <Image src={chooseImg} alt="coffee" />
+          <Image placeholder="blur" src={chooseImg} alt="coffee" />
         </div>
       </div>
     </Container>
