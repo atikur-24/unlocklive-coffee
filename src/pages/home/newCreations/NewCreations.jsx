@@ -6,8 +6,6 @@ import MyBtn from "@/components/ui/MyBtn";
 import { creationImages } from "@/data";
 import Image from "next/image";
 import { useState } from "react";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
 
 const NewCreations = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -32,9 +30,6 @@ const NewCreations = () => {
   const prevImage = creationImages[prevIndex] || currentImage;
 
   const handleClick = (index) => setIndex(index);
-  const handleClose = () => setIndex(-1);
-  const handleMovePrev = () => setIndex(prevIndex);
-  const handleMoveNext = () => setIndex(nextIndex);
 
   // Calculation container width based on the number of creationImages and gap
   const containerWidth = creationImages.length * (424 + 24) - 24;
@@ -98,7 +93,7 @@ const NewCreations = () => {
               </div>
             )}
 
-            {!!currentImage && (
+            {/* {!!currentImage && (
               <Lightbox
                 mainSrc={currentImage.original}
                 imageTitle={currentImage.caption}
@@ -111,7 +106,7 @@ const NewCreations = () => {
                 onMovePrevRequest={handleMovePrev}
                 onMoveNextRequest={handleMoveNext}
               />
-            )}
+            )} */}
           </div>
         </div>
       );
