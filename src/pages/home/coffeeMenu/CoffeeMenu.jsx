@@ -1,8 +1,8 @@
 import { abril } from "@/assets/Fonts/font";
 import { coffeeBgTransparent } from "@/assets/images";
+import { Button } from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
-import { Button } from "@/components/ui/button";
 import { coffeeMenuData } from "@/data";
 import Image from "next/image";
 
