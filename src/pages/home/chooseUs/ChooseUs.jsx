@@ -20,7 +20,7 @@ const ChooseUs = () => {
             className="flex flex-col items-center lg:items-start"
             title="Choosing Unlocklive, A Taste of Perfection"
             subTitle="Why Choose Us"
-            leftStyle="hidden"
+            leftStyle="block lg:hidden"
           />
           <p className="mt-3 tracking-tight opacity-60 lg:leading-7">
             Unlocklive takes pride in the art of roasting, transforming raw

@@ -33,9 +33,8 @@ const NewRecipe = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
         },
       },
       {
@@ -64,7 +63,7 @@ const NewRecipe = () => {
             className="flex flex-col items-center lg:items-start"
             title="Taste Our New Recipe"
             subTitle="New Recipes"
-            leftStyle="hidden"
+            leftStyle="lg:hidden block"
           />
           <p className="my-3 text-justify text-zinc-600 lg:my-5">
             Our chefs have been hard at work crafting innovative recipes that
