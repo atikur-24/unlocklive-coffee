@@ -29,10 +29,8 @@ const NewCreations = () => {
   const prevIndex = (index + creationImages.length - 1) % creationImages.length;
   const prevImage = creationImages[prevIndex] || currentImage;
 
-  const handleClick = (index) => setIndex(index);
-
   // Calculation container width based on the number of creationImages and gap
-  const containerWidth = creationImages.length * (424 + 24) - 24;
+  // const containerWidth = creationImages.length * (424 + 24) - 24;
 
   const showMore = (filteredItems) => {
     setDisplayCount(filteredItems.length);
@@ -45,8 +43,8 @@ const NewCreations = () => {
   const renderFilteredServices = (filteredItems) => {
     if (filteredItems && filteredItems.length > 0) {
       return (
-        <div style={{ maxWidth: containerWidth + "px" }}>
-          <div className="flex flex-wrap gap-[24px] ">
+        <div>
+          <div className="flex flex-wrap gap-[20px] ">
             {filteredItems?.slice(0, displayCount).map((e, i) => {
               return (
                 <div
@@ -64,7 +62,6 @@ const NewCreations = () => {
                     src={e.src}
                     alt={e.caption}
                     className="h-full w-full cursor-pointer object-cover"
-                    onClick={() => handleClick(i)}
                   />
                   <p className="absolute bottom-5 left-5 cursor-pointer rounded-[7px] border border-white border-opacity-50 px-2.5 py-0.5 text-[14px] text-white shadow-md hover:bg-[#86371C]">
                     {e?.caption}
@@ -139,7 +136,7 @@ const NewCreations = () => {
         boundless innovation.
       </p>
 
-      <div className="mx-auto mt-[60px]  w-[340px] lg:w-[1320px]">
+      <div className="mx-auto mt-[60px]">
         <div className="hidden items-center justify-center gap-5 md:mx-auto md:flex lg:mx-0 lg:flex">
           <p
             className={

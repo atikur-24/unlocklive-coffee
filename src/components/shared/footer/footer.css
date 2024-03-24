@@ -1,0 +1,8 @@
+.footerBg {
+  background-image: url(../../../assets/images/othersImg/footer-bg.png);
+  background-repeat: no-repeat;
+  /* background-position:; */
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}

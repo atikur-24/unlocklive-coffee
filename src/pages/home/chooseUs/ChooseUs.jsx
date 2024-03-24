@@ -1,6 +1,6 @@
 import { bakilda } from "@/assets/Fonts/font";
 import { chooseImg, flowerImg } from "@/assets/images";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { chooseData } from "@/data";

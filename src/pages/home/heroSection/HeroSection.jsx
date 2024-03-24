@@ -2,8 +2,8 @@
 
 import { abril, bakilda } from "@/assets/Fonts/font";
 import { coffeeBg, leafOne, leafTwo } from "@/assets/images";
-import { Button } from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
+import { Button } from "@/components/ui/button";
 import { heroData } from "@/data";
 import Image from "next/image";
 import Slider from "react-slick";
