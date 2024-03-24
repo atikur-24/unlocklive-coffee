@@ -1,4 +1,4 @@
-import { adminIcon } from "@/assets/images";
+import admin from "@/assets/images/icon/admin.svg";
 import logo from "@/assets/images/logo/unlocklive.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
           <div className="inline-flex items-center gap-x-[15px]">
             <div className="inline-flex h-[30px] w-[30px] items-start justify-start gap-2.5">
-              <Image src={adminIcon} alt="admin" />
+              <Image src={admin} alt="admin" />
             </div>
             <Link href="/sign-in" className="text-nowrap">
               Sign in
