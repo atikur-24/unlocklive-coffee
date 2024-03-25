@@ -4,6 +4,7 @@ import { bakilda } from "@/assets/Fonts/font";
 import Container from "@/components/ui/Container";
 import MyBtn from "@/components/ui/MyBtn";
 import { creationImages } from "@/data";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -139,11 +140,11 @@ const NewCreations = () => {
       <div className="mx-auto mt-[60px]">
         <div className="hidden items-center justify-center gap-5 md:mx-auto md:flex lg:mx-0 lg:flex">
           <p
-            className={
-              toggleState == 1
-                ? "cursor-pointer rounded-[50px] border-[1.5px] border-[#86371C] px-[24px] py-[12px] text-[22px] font-normal text-[#86371C] shadow-[#86371C] hover:bg-[#86371C] hover:text-white hover:shadow-md"
-                : "cursor-pointer rounded-[50px] px-[24px] py-[12px] text-[22px] font-normal text-[#031811] shadow-[#86371C] hover:bg-[#86371C] hover:text-white hover:shadow-md"
-            }
+            className={cn(
+              "cursor-pointer rounded-[50px] px-[24px] py-[12px] text-[22px] font-normal text-[#031811] shadow-[#86371C] hover:bg-[#86371C] hover:text-white hover:shadow-md",
+              toggleState === 1 &&
+                "cursor-pointer rounded-[50px] border-[1.5px] border-[#86371C] px-[24px] py-[12px] text-[22px] font-normal text-[#86371C] shadow-[#86371C] hover:bg-[#86371C] hover:text-white hover:shadow-md",
+            )}
             onClick={() => toggleTab(1)}
           >
             All

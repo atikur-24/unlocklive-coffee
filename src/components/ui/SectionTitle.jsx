@@ -1,4 +1,5 @@
 import { bakilda } from "@/assets/Fonts/font";
+import { cn } from "../lib/utls";
 
 const SectionTitle = ({
   title,
@@ -12,11 +13,17 @@ const SectionTitle = ({
     <div className={className}>
       <div className="flex items-center gap-2.5">
         <div
-          className={`${leftStyle} rightStyle, h-[2px] w-12 bg-gradient-to-l from-my-secondary md:h-[3px] md:w-14`}
+          className={cn(
+            "h-[2px] w-12 bg-gradient-to-l from-my-secondary md:h-[3px] md:w-14",
+            leftStyle,
+          )}
         />
         <h2 className="font-['Lemonada'] text-my-secondary">{subTitle}</h2>
         <div
-          className={`${rightStyle} h-[2px] w-12 bg-gradient-to-r from-my-secondary md:h-[3px] md:w-14`}
+          className={cn(
+            "h-[2px] w-12 bg-gradient-to-r from-my-secondary md:h-[3px] md:w-14",
+            rightStyle,
+          )}
         />
       </div>
       {bottomStyle && (

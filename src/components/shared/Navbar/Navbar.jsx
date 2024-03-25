@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <Container className="border-b border-[#101113] border-opacity-10 py-3 pb-5 md:py-5 xl:py-6">
       <div className="hidden items-center justify-between gap-x-6 pb-4 font-medium lg:flex">
-        <nav className="inline-flex list-none items-start justify-start gap-[50px]">
+        <nav className="inline-flex list-none items-start justify-start gap-10">
           <NavItem />
         </nav>
         <div>
