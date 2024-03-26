@@ -1,11 +1,11 @@
-import ChooseUs from "@/pages/home/chooseUs/ChooseUs";
-import CoffeeMenu from "@/pages/home/coffeeMenu/CoffeeMenu";
-import HeroSection from "@/pages/home/heroSection/HeroSection";
-import Information from "@/pages/home/information/Information";
-import NewCreations from "@/pages/home/newCreations/NewCreations";
-import NewRecipe from "@/pages/home/newRecipe/newRecipe";
+import ChooseUs from "@/app/home/chooseUs/ChooseUs";
+import CoffeeMenu from "@/app/home/coffeeMenu/CoffeeMenu";
+import HeroSection from "@/app/home/heroSection/HeroSection";
+import Information from "@/app/home/information/Information";
+import NewCreations from "@/app/home/newCreations/NewCreations";
+import NewRecipe from "@/app/home/newRecipe/NewRecipe";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main>
       <HeroSection />
@@ -18,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
