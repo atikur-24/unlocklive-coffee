@@ -22,11 +22,9 @@ const NavItem = () => {
           <NavigationMenu key={item.id}>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="">
-                  {item.name}
-                </NavigationMenuTrigger>
+                <NavigationMenuTrigger>{item.name}</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="w-[100px] p-1 md:w-[180px] md:p-2">
+                  <ul className="z-20 w-[150px] p-1 md:w-[180px] md:p-2">
                     {item?.submenu?.map((submenuItem) => (
                       <ListItem
                         key={submenuItem.path}

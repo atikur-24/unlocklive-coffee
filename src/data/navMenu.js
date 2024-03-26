@@ -11,19 +11,19 @@ export const navMenu = [
     submenu: [
       {
         name: "About Us",
-        path: "/about",
+        path: "pages/about",
       },
       {
         name: "Our Products",
-        path: "/product",
+        path: "pages/product",
       },
       {
         name: "Our Menu",
-        path: "/menu",
+        path: "pages/menu",
       },
       {
         name: "Blogs",
-        path: "/blog",
+        path: "pages/blog",
       },
     ],
   },
@@ -33,29 +33,29 @@ export const navMenu = [
     submenu: [
       {
         name: "Coffee",
-        path: "/coffee",
+        path: "pages/coffee",
       },
       {
         name: "Drinks",
-        path: "/drinks",
+        path: "pages/drinks",
       },
       {
         name: "Burger & Pizza",
-        path: "/burger-pizza",
+        path: "pages/burger-pizza",
       },
       {
         name: "Dinner",
-        path: "/dinner",
+        path: "pages/dinner",
       },
       {
         name: "Bakery & Cookies",
-        path: "/bakery-cookies",
+        path: "pages/bakery-cookies",
       },
     ],
   },
   {
     id: 4,
     name: "Contact Us",
-    path: "/contact",
+    path: "pages/contact",
   },
 ];
