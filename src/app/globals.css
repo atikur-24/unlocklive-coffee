@@ -76,3 +76,13 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .activeTab {
+    @apply cursor-pointer rounded-[50px] border-[1.5px]  border-my-secondary px-[24px] py-[12px] text-xl font-normal text-my-secondary shadow-my-secondary hover:bg-my-secondary hover:text-white hover:shadow-md;
+  }
+
+  .defaultTab {
+    @apply cursor-pointer rounded-[50px] px-[24px] py-[12px] text-xl font-normal text-[#031811] shadow-my-secondary hover:bg-my-secondary hover:text-white hover:shadow-md;
+  }
+}
