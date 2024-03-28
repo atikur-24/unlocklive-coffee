@@ -56,7 +56,7 @@ export const recipeData = [
     id: 2,
     img: recipeTwo,
     title: "Crispy Chicken Burger",
-    text: "Ingredients: tomato sauce, chicken, latus etc.",
+    text: "Ingredients: tomato sauce, chicken, etc.",
   },
   {
     id: 3,
