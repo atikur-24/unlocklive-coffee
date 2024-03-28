@@ -56,9 +56,9 @@ const NewRecipe = () => {
   };
 
   return (
-    <Container className="bg-orange-5 py-10 md:py-12 lg:py-16 xl:py-20">
+    <Container className="overflow-hidden bg-orange-5 py-10 md:py-12 lg:py-16 xl:py-20">
       <div className="flex flex-col items-center justify-between gap-10 lg:flex-row xl:gap-20">
-        <div className="flex-auto">
+        <div className="">
           <SectionTitle
             className="flex flex-col items-center lg:items-start"
             title="Taste Our New Recipe"
@@ -95,7 +95,7 @@ const NewRecipe = () => {
           <Slider ref={sliderRef} {...settings}>
             {recipeData?.map((recipe) => (
               <div key={recipe.id}>
-                <div className="group relative block h-[460px] w-[340px] rounded-[20px] bg-gray-900 transition-all lg:h-[400px] lg:w-[300px] xl:h-[442px] xl:w-[345px]">
+                <div className="group relative mx-auto block h-[380px] w-[300px] rounded-[20px] bg-gray-900 transition-all sm:h-[360px] sm:w-[280px] md:h-[400px] md:w-[300px] lg:ml-auto lg:h-[400px] lg:w-[300px] xl:h-[442px] xl:w-[345px]">
                   <Image
                     className="absolute inset-0 h-full 
                                   w-full rounded-[20px] border-white object-cover transition-all group-hover:border-[7px] group-hover:opacity-50"
@@ -103,7 +103,7 @@ const NewRecipe = () => {
                     alt="recipe"
                   />
                   <div className="relative p-5">
-                    <div className="absolute left-6 top-[350px]">
+                    <div className="absolute left-6 top-[290px] sm:top-[260px] md:top-[300px] xl:top-[350px]">
                       {/* Hidden content */}
                       <div
                         className="translate-y-8 transform 
