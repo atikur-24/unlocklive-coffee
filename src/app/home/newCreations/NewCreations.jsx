@@ -35,16 +35,30 @@ const NewCreations = () => {
   const renderFilteredItem = (filteredItems) => {
     if (filteredItems.length > 0) {
       return (
-        <div className="flex flex-wrap gap-[20px] ">
+        <div className="flex flex-wrap sm:gap-2 md:gap-4 lg:gap-5">
           {filteredItems?.slice(0, displayCount).map((item) => {
             return (
               <div
                 key={item.id}
-                style={{
-                  width: item.width + "px",
-                  height: item.height + "px",
-                }}
-                className="relative mb-6 overflow-hidden rounded-3xl"
+                className={`relative mb-4 h-[300px] overflow-hidden rounded-xl sm:h-[200px] md:mb-6 md:h-[285px] md:rounded-2xl lg:h-[335px] lg:rounded-3xl ${
+                  item.width === 82
+                    ? "w-full sm:w-[62%]"
+                    : item.width === 40
+                      ? "w-full sm:w-[40%]"
+                      : item.width === 35
+                        ? "w-full sm:w-[35%]"
+                        : item.width === 30
+                          ? "w-full sm:w-[30%]"
+                          : item.width === 25
+                            ? "w-full sm:w-[25%]"
+                            : "w-full"
+                }`}
+
+                // style={{
+                //   width: item.width + "px",
+                //   height: item.height + "px",
+                // }}
+                // className="relative mb-6 overflow-hidden rounded-3xl"
               >
                 <Image
                   src={item.img}
