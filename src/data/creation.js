@@ -13,6 +13,7 @@ import {
   burgerImg4,
   burgerImg5,
   coffeeMenuImg1,
+  coldCoffee,
   cookies,
   cookies2,
   cookies3,
@@ -52,7 +53,7 @@ export const creationData = [
   {
     id: 21,
     img: hotchocolet,
-    width: 35,
+    width: 30,
     category: "Drinks",
     caption: "Hot Chocolate",
   },

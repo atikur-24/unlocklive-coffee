@@ -79,10 +79,10 @@
 
 @layer utilities {
   .activeTab {
-    @apply cursor-pointer rounded-[50px] border-[1.5px]  border-my-secondary px-[24px] py-[12px] text-xl font-normal text-my-secondary shadow-my-secondary hover:bg-my-secondary hover:text-white hover:shadow-md;
+    @apply cursor-pointer rounded-[30px] border border-my-secondary px-2 py-1 text-sm text-my-secondary shadow-my-secondary hover:bg-my-secondary hover:text-white hover:shadow-md md:rounded-[50px] md:px-4 md:py-2 md:text-base lg:border-[1.5px] lg:px-6 lg:py-3 lg:text-xl;
   }
 
   .defaultTab {
-    @apply cursor-pointer rounded-[50px] px-[24px] py-[12px] text-xl font-normal text-[#031811] shadow-my-secondary hover:bg-my-secondary hover:text-white hover:shadow-md;
+    @apply cursor-pointer rounded-[30px] px-2 py-1 text-sm text-[#031811] shadow-my-secondary hover:bg-my-secondary hover:text-white hover:shadow-md md:rounded-[50px] md:px-4 md:py-2 md:text-base lg:px-[24px] lg:py-[12px] lg:text-xl;
   }
 }
