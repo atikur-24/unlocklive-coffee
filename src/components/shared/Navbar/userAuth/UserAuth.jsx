@@ -1,14 +1,8 @@
 "use client";
 import { adminIcon } from "@/assets/images";
+import Modal from "@/components/ui/Modal";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { DialogFooter, DialogTitle } from "@/components/ui/dialog";
 import {
   Form,
   FormControl,
@@ -43,59 +37,34 @@ const UserAuth = () => {
       <div className="h-[25px] w-[25px] lg:h-[30px] lg:w-[30px]">
         <Image src={adminIcon} alt="admin" />
       </div>
-      <Dialog>
-        <DialogTrigger>Sign in</DialogTrigger>
-        <DialogContent className="sm:max-w-[400px]">
-          <DialogHeader>
-            <DialogTitle className="text-center font-medium text-black lg:font-semibold">
-              Login Your Account
-            </DialogTitle>
-            {/* <DialogDescription>
-              Make changes to your profile here. Click save when youre done.
-            </DialogDescription> */}
-          </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="">
-              <Label htmlFor="name" className="">
-                Email
-              </Label>
-              <Input id="name" defaultValue="Pedro Duarte" className="" />
-            </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="username" className="">
-                Password
-              </Label>
-              <Input id="username" className="col-span-3" />
-            </div>
-          </div>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-              <FormField
-                control={form.control}
-                name="username"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Username</FormLabel>
-                    <FormControl>
-                      <Input placeholder="shadcn" {...field} />
-                    </FormControl>
-                    <FormDescription>
-                      This is your public display name.
-                    </FormDescription>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button type="submit">Submit</Button>
-            </form>
-          </Form>
-          <DialogFooter>
-            <Button variant="outline" type="submit">
-              Save changes
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <Modal buttonName="Sign in">
+        <DialogTitle className="text-center font-medium text-black lg:font-semibold">
+          Login Your Account
+        </DialogTitle>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <FormField
+              control={form.control}
+              name="username"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Username</FormLabel>
+                  <FormControl>
+                    <Input placeholder="shadcn" {...field} />
+                  </FormControl>
+                  <FormDescription>
+                    This is your public display name.
+                  </FormDescription>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <DialogFooter>
+              <Button type="submit">Login</Button>
+            </DialogFooter>
+          </form>
+        </Form>
+      </Modal>
     </div>
   );
 };
