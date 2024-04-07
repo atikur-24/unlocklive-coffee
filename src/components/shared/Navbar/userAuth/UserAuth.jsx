@@ -1,29 +1,23 @@
 "use client";
+
 import { adminIcon } from "@/assets/images";
+import CustomForm from "@/components/ui/CustomForm";
 import Modal from "@/components/ui/Modal";
-import { Button } from "@/components/ui/button";
-import { DialogFooter, DialogTitle } from "@/components/ui/dialog";
+import { Checkbox } from "@/components/ui/checkbox";
+import { DialogDescription, DialogTitle } from "@/components/ui/dialog";
+
 import {
-  Form,
   FormControl,
   FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
-
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-});
 
 const UserAuth = () => {
   const form = useForm(); // Initialize the form object
@@ -33,37 +27,58 @@ const UserAuth = () => {
   };
 
   return (
-    <div className="inline-flex items-center gap-1 md:gap-2 lg:gap-3 xl:gap-x-[15px]">
+    <div className="flex items-center gap-2 md:gap-3 lg:gap-3 xl:gap-x-4">
       <div className="h-[25px] w-[25px] lg:h-[30px] lg:w-[30px]">
         <Image src={adminIcon} alt="admin" />
       </div>
-      <Modal buttonName="Sign in">
+      {/* modal */}
+      <Modal buttonName="Sign in" buttonSize="sm" className="sm:max-w-[350px]">
         <DialogTitle className="text-center font-medium text-black lg:font-semibold">
-          Login Your Account
+          Login
         </DialogTitle>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-            <FormField
-              control={form.control}
-              name="username"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Username</FormLabel>
-                  <FormControl>
-                    <Input placeholder="shadcn" {...field} />
-                  </FormControl>
-                  <FormDescription>
-                    This is your public display name.
-                  </FormDescription>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <DialogFooter>
-              <Button type="submit">Login</Button>
-            </DialogFooter>
-          </form>
-        </Form>
+        {/* sign in form */}
+        <CustomForm form={form} onSubmit={onSubmit} buttonName="w-full">
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input placeholder="Enter Email" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="password"
+            render={({ field }) => (
+              <FormItem>
+                <FormControl>
+                  <Input
+                    type="password"
+                    placeholder="Enter Password"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormDescription className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <Checkbox />
+              <Label>Remember me</Label>
+            </div>
+            <div className="hover:cursor-pointer hover:underline">
+              forgot password?
+            </div>
+          </FormDescription>
+        </CustomForm>
+        <DialogDescription className="text-center">
+          Don&apos;t have an account? <Link href="/">Sign Up</Link>
+        </DialogDescription>
       </Modal>
     </div>
   );
