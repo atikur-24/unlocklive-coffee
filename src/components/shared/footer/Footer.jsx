@@ -1,4 +1,5 @@
-import { footerBg, logoWhite } from "@/assets/images";
+import { footerBg } from "@/assets/images";
+import logoWhite from "@/assets/images/logo/logo-white.png";
 import Container from "@/components/ui/Container";
 import Image from "next/image";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";

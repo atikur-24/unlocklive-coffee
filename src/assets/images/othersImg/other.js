@@ -1,7 +1,6 @@
-import logoWhite from "@/assets/images/logo/logo-white.png";
-import flowerImg from "@/assets/images/othersImg/2.svg";
-import chooseImg from "@/assets/images/othersImg/choose.png";
-import coffeeBgTransparent from "@/assets/images/othersImg/coffee-bg.png";
-import footerBg from "@/assets/images/othersImg/footer-bg.png";
+import chooseImg from "@/assets/images/othersImg/choose.webp";
+import coffeeBgTransparent from "@/assets/images/othersImg/coffee-bg.webp";
+import flowerImg from "@/assets/images/othersImg/flower.svg";
+import footerBg from "@/assets/images/othersImg/footer-bg.webp";
 
-export { chooseImg, coffeeBgTransparent, flowerImg, footerBg, logoWhite };
+export { chooseImg, coffeeBgTransparent, flowerImg, footerBg };
