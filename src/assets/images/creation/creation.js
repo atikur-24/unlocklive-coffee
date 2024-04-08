@@ -2,7 +2,6 @@ import allImg1 from "@/assets/images/creation/1.webp";
 import allImg2 from "@/assets/images/creation/2.webp";
 import allImg3 from "@/assets/images/creation/3.webp";
 import allImg4 from "@/assets/images/creation/4.webp";
-import allImg5 from "@/assets/images/creation/5.webp";
 import bakery2 from "@/assets/images/creation/bakery-2.jpg";
 import bakery3 from "@/assets/images/creation/bakery-3.jpg";
 import bakery1 from "@/assets/images/creation/bakery.jpg";
@@ -32,7 +31,6 @@ export {
   allImg2,
   allImg3,
   allImg4,
-  allImg5,
   bakery1,
   bakery2,
   bakery3,

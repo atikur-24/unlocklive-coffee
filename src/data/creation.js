@@ -3,7 +3,6 @@ import {
   allImg2,
   allImg3,
   allImg4,
-  allImg5,
   bakery1,
   bakery2,
   bakery3,
@@ -13,7 +12,6 @@ import {
   burgerImg4,
   burgerImg5,
   coffeeMenuImg1,
-  coldCoffee,
   cookies,
   cookies2,
   cookies3,
@@ -70,12 +68,6 @@ export const creationData = [
     width: 35,
     category: "Burger",
     caption: "Berry Burger",
-  },
-  {
-    id: 5,
-    img: allImg5,
-    width: 35,
-    caption: "Donats",
   },
   {
     id: 25,
