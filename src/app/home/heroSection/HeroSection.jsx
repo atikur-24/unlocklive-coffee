@@ -74,7 +74,9 @@ const HeroSection = () => {
                   </p>
                   {/* button with cup images */}
                   <div className="mt-4 flex items-center justify-start gap-6 sm:justify-center lg:mt-8 lg:justify-start lg:gap-11 xl:mt-10">
-                    <Button className="py-6">EXPLORE OUR MENU</Button>
+                    <Button className="lg:px-8 lg:py-6 lg:text-base">
+                      EXPLORE OUR MENU
+                    </Button>
                     <div className="flex items-center justify-normal gap-3 lg:gap-6">
                       <div className="avatar-group -space-x-6 rtl:space-x-reverse">
                         {hero?.cup_img?.map((cup) => {

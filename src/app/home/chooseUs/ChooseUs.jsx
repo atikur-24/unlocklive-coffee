@@ -54,7 +54,9 @@ const ChooseUs = () => {
             epitome of craftsmanship, flavor, and dedication.
           </p>
           <div className="mt-5 flex justify-center md:mt-8 lg:mt-10 lg:justify-start">
-            <Button variant="outline">Explore Our Menus</Button>
+            <Button className="lg:px-8 lg:py-6 lg:text-base" variant="outline">
+              Explore Our Menus
+            </Button>
           </div>
         </div>
         <div className="rounded-b-2xl rounded-t-full border-2 border-my-primary border-t-transparent border-opacity-10 p-4">

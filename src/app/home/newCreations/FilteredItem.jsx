@@ -60,11 +60,19 @@ const FilteredItem = ({ filteredItems }) => {
         {filteredItems.length > 5 && (
           <div className="mx-auto mt-4 flex items-center">
             {displayCount === filteredItems.length ? (
-              <Button onClick={showLess} variant="outline">
+              <Button
+                onClick={showLess}
+                className="lg:px-8 lg:py-5 lg:text-base"
+                variant="outline"
+              >
                 Show Less
               </Button>
             ) : (
-              <Button onClick={() => showMore(filteredItems)} variant="outline">
+              <Button
+                onClick={() => showMore(filteredItems)}
+                className="lg:px-8 lg:py-5 lg:text-base"
+                variant="outline"
+              >
                 Show More
               </Button>
             )}

@@ -58,7 +58,9 @@ const CoffeeMenu = () => {
         })}
       </div>
       <div className="mt-10 flex flex-col items-center lg:mt-12 xl:mt-16">
-        <Button variant="outline">View All Menu</Button>
+        <Button className="lg:px-8 lg:py-5 lg:text-base" variant="outline">
+          View All Menu
+        </Button>
       </div>
       <Image
         src={coffeeBgTransparent}
