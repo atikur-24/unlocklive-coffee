@@ -5,8 +5,8 @@ import {
   allImg4,
   allImg5,
   bakery1,
+  bakery2,
   bakery3,
-  barekry2,
   burgerImg1,
   burgerImg2,
   burgerImg3,
@@ -142,7 +142,7 @@ export const creationData = [
   },
   {
     id: 14,
-    img: barekry2,
+    img: bakery2,
     width: 35,
     category: "Bakery",
     caption: "Kunafa",

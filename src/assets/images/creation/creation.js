@@ -1,11 +1,11 @@
-import allImg1 from "@/assets/images/creation/1.jpeg";
-import allImg2 from "@/assets/images/creation/2.jpeg";
-import allImg3 from "@/assets/images/creation/3.jpeg";
-import allImg4 from "@/assets/images/creation/4.jpeg";
-import allImg5 from "@/assets/images/creation/5.jpeg";
+import allImg1 from "@/assets/images/creation/1.webp";
+import allImg2 from "@/assets/images/creation/2.webp";
+import allImg3 from "@/assets/images/creation/3.webp";
+import allImg4 from "@/assets/images/creation/4.webp";
+import allImg5 from "@/assets/images/creation/5.webp";
+import bakery2 from "@/assets/images/creation/bakery-2.jpg";
+import bakery3 from "@/assets/images/creation/bakery-3.jpg";
 import bakery1 from "@/assets/images/creation/bakery.jpg";
-import bakery3 from "@/assets/images/creation/bakery3.jpg";
-import barekry2 from "@/assets/images/creation/barekry2.jpg";
 import burgerImg1 from "@/assets/images/creation/burger1.jpeg";
 import burgerImg2 from "@/assets/images/creation/burger2.jpeg";
 import burgerImg3 from "@/assets/images/creation/burger3.jpeg";
@@ -34,8 +34,8 @@ export {
   allImg4,
   allImg5,
   bakery1,
+  bakery2,
   bakery3,
-  barekry2,
   burgerImg1,
   burgerImg2,
   burgerImg3,
