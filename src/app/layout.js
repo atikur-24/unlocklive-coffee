@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
         className={`${valueSansPro.className} mx-auto max-w-screen-2xl text-xs text-my-primary sm:text-sm lg:text-base`}
       >
         <Navbar />
-        {children}
+        <div className="min-h-[50vh]">{children}</div>
         <Footer />
       </body>
     </html>
