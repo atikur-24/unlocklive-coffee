@@ -1,7 +1,8 @@
-import Coming from "@/components/shared/Coming";
+import { menuImg } from "@/assets/images";
+import PageBanner from "@/components/shared/pageBanner/PageBanner";
 
 const MenuPage = () => {
-  return <Coming />;
+  return <PageBanner image={menuImg} title="Explore Our Menu" />;
 };
 
 export default MenuPage;
