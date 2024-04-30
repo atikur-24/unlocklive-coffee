@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { MdClose } from "react-icons/md";
 import { RiMenu2Line } from "react-icons/ri";
 import NavItem from "../NavItem";
-import Cart from "../cart/Cart";
+import CartIcon from "../cart/CartIcon";
 import Logo from "../logo/Logo";
 import Search from "../search/Search";
 import UserAuth from "../userAuth/UserAuth";
@@ -39,7 +39,7 @@ const ResponsiveNavbar = () => {
           <div className="inline-flex gap-x-7 sm:gap-x-5 md:gap-x-6">
             <Search />
             <Wishlist />
-            <Cart />
+            <CartIcon />
           </div>
           <UserAuth />
         </div>

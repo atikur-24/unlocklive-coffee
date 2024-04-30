@@ -1,6 +1,6 @@
 import Container from "../../ui/Container";
 import NavItem from "./NavItem";
-import Cart from "./cart/Cart";
+import CartIcon from "./cart/CartIcon";
 import Logo from "./logo/Logo";
 import ResponsiveNavbar from "./responsive/ResponsiveNavbar";
 import Search from "./search/Search";
@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="inline-flex gap-x-6 xl:gap-x-[30px]">
             <Search />
             <Wishlist />
-            <Cart />
+            <CartIcon />
           </div>
           <UserAuth />
         </div>
